@@ -14,3 +14,10 @@
 <ng-template #noServer>
   <p>No server is created</p>
 </ng-template>
+
+<p
+  [ngStyle]="{backgroundColor : getColour()}"
+  [ngClass]="{online : serverOnlineStatus === 'online'}"
+>
+  Server is {{ serverOnlineStatus }}
+</p>
